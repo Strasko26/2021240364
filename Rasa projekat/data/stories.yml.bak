@@ -1,0 +1,43 @@
+version: "3.1"
+stories:
+
+- story: User says goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: pretraga ljubimca
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: search_pet
+    - action: action_search_pets
+
+- story: detalji ljubimca
+  steps:
+    - intent: show_pet_details
+    - action: action_show_pet_details
+
+- story: prikaz svih ljubimaca
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: show_pets
+    - action: action_show_pets
+    
+- story: korisnik naručuje ljubimca
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: order_pet
+    - action: utter_order_pet
+    
+
+
+
+
+    
+
+
+
+

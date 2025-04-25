@@ -1,0 +1,69 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - ćao
+    - zdravo
+    - hello
+    - hej
+    - pozdrav
+
+- intent: search_pet
+  examples: |
+    - pokaži mi ljubimca {pet_name}
+    - želim da vidim {pet_name}
+    - pronađi mi {pet_name}
+    - da li imate {pet_name}
+    - prikaži {pet_name}
+    - voleo bih da vidim {pet_name}
+    - da li mogu da vidim {pet_name}?
+    - možeš li da prikažeš {pet_name}?
+
+- intent: show_pet_details
+  examples: |
+    - prikaži mi detalje za [Luna](pet_name)
+    - detalji o [Milo](pet_name)
+    - informacije o ljubimcu [Rex](pet_name)
+    - želim detalje o [Kiwi](pet_name)
+    - možeš li da pokažeš detalje za [Nina](pet_name)?
+    - šta znaš o [Tara](pet_name)?
+    - kaži mi više o [Sunny](pet_name)
+    - kaži mi više o [Goldie](pet_name)
+    - kaži mi više o [Rocky](pet_name)
+    - kaži mi više o [Bubbles](pet_name)
+
+- intent: show_pets
+  examples: |
+    - pokaži mi sve ljubimce
+    - želim da vidim sve ljubimce
+    - prikaži mi sve ljubimce
+    - možeš li da pokažeš sve ljubimce?
+    - prikaži mi listu ljubimaca
+    - da li imate ljubimce?
+    
+- intent: goodbye
+  examples: |
+    - dovidjenja
+    - bye
+    - vidimo se
+    - do viđenja
+    
+- intent: bot_challenge
+  examples: |
+    - Da li si ti pravi čovek?
+    - Jesi li bot?
+    - Da li pričam sa botom?
+    - Jeste li stvarni?
+    - Da li si stvarna osoba?
+    - Jesi li pravi?
+    - Jesi li ti robot?
+    
+- intent: order_pet
+  examples: |
+    - dodaj [Milo](pet_name) u korpu
+    - želim da dodam [Kiwi](pet_name) u korpu
+    - stavi [Tara](pet_name) u moj korpu
+    - možeš li da dodate [Rex](pet_name) u korpu?
+    - dodaj ljubimca [Luna](pet_name) u korpu
+    - želim da stavim [Bubbles](pet_name) u korpu
+    

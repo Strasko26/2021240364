@@ -1,0 +1,47 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - search_pet
+  - show_pet_details
+  - bot_challenge
+  - show_pets
+  - add_to_cart
+  - proveri_prijavu
+
+entities:
+  - pet_name
+
+slots:
+  pet_name:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: pet_name
+  
+
+responses:
+  utter_greet:
+    - text: "Zdravo! Ja sam vaš Pet Store asistent. Kako mogu da vam pomognem?"
+  utter_goodbye:
+    - text: "Doviđenja! Nadamo se da ćemo se ponovo videti."
+  utter_iamabot:
+    - text: "Ja sam bot, razvijen da vam pomognem da pronađete ljubimce. Kako mogu da vam pomognem?"
+  utter_pet_not_found:
+    - text: "Nismo pronašli ljubimca sa imenom '{pet_name}'. Pokušajte ponovo."
+  utter_show_pets:
+    - text: "Evo svih ljubimaca koji su dostupni:"
+  utter_order_pet:
+    - text: "Dodajem ljubimca u korpu..."
+
+
+actions:
+  - action_show_pet_details
+  - action_search_pets
+  - action_show_pets
+  - action_add_to_cart
+ 
+
+
